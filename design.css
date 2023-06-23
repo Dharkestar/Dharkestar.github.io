@@ -20,7 +20,7 @@
     flex: 33.33%;
     padding: 5px;}
 .image3 {
-    flex: 30.33%;
+    flex: 33.33%;
     padding-right: 0;
     padding-top: 5px;}
 .about-text {
@@ -40,7 +40,15 @@ h2 {
     display: block;
     padding: 3px;
     font-size: 26px;}
-input[type=button], input[type=submit], input[type=reset] {
+h3 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 44px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+input[type=submit], input[type=reset] {
     background-color: #476a7f;
     border: none;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -61,6 +69,16 @@ form {
     flex: 35%;
     margin: auto;
     padding: 10px;}
+.square {
+    display: flex;
+    flex-direction: row;
+    background-color: #e7e7e7;
+    width: 300px;
+    height: 300px;
+    margin: 10px;}
+.square-cont {
+    display: flex;
+    background-color: rgb(115, 139, 162);}
 header {
     font-family: 'Birthstone', 'Segoe Script', sans-serif;
     font-size: 65px;
@@ -92,14 +110,13 @@ li {
     margin: 10px;}
 p {
     color: black;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;}
+    font-family: 'Inter', Arial, Helvetica, sans-serif;}    
 footer {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    margin: 10px;
+    margin-top: 10px;
     background-color: #e7e7e7;
     color: black;
     text-align: center;
     display: block;
     padding: 3px;
     font-size: 20px;}
-    
