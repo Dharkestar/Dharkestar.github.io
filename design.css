@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+.wrapper {
+    max-width: 1300px;
+    margin: 5px auto;
+    padding-left: 20px;
+    padding-right: 20px;}
+.cont {
+    display: flex;}
+.cont2 {
+    display: flex;
+    width: 1300px;
+    height: 600px;
+    background-color: #e7e7e7;}
+.image1 {
+    flex: 33.33%;
+    padding-left: 0;
+    padding-top: 5px;}
+.image2 {
+    flex: 33.33%;
+    padding: 5px;}
+.image3 {
+    flex: 30.33%;
+    padding-right: 0;
+    padding-top: 5px;}
+.about-text {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    padding: 50px;
+    margin: 0 auto;}
+input[type=text] {
+    width: 50%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    box-sizing: border-box;}
+h2 { 
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: black;
+    display: block;
+    padding: 3px;
+    font-size: 26px;}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #476a7f;
+    border: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 4px 2px;}
+#message {
+    height: 170px;}
+form {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #e7e7e7;
+    color: black;
+    width: 100%;}
+.paula {
+    flex: 35%;
+    margin: auto;
+    padding: 10px;}
+header {
+    font-family: 'Birthstone', 'Segoe Script', sans-serif;
+    font-size: 65px;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;}
+h1 {
+    margin: auto;}
+nav { 
+    padding: 1px;
+    text-align: left;
+    font-size: 24px;
+    background-color: #e7e7e7;
+    margin-bottom: 10px;}
+a:link {
+    color: #000000;
+    text-decoration: none;} 
+a:visited {
+    color:#075989;}    
+body {
+    background-color: #284d64;
+    color: white;}
+ul {
+    list-style-type: none;}
+li {
+    display: inline;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 10px;}
+p {
+    color: black;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;}
+footer {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 10px;
+    background-color: #e7e7e7;
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 3px;
+    font-size: 20px;}
+    
