@@ -17,7 +17,7 @@
 .about-text {
     position: relative;
     font-size: 20px;
-    font-weight: normal
+    font-weight: normal;
     line-height: 1.6;
     color: black;
     padding: 50px;
@@ -28,7 +28,8 @@ input[type=text] {
     margin: 10px 0;
     border-radius: 5px;}
 h1 {
-        margin: auto}
+    margin: auto
+    font-weight: normal;}
 h2 { 
     font-family: 'Birthstone', Arial, Helvetica, sans-serif;
     color: white;
