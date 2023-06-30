@@ -5,9 +5,9 @@
     margin: 5px auto;}
 .cont {
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr); 
-        gap: 1%;}
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); 
+    gap: 1%;}
 .cont2 {
     display: flex;
     border-radius: 10px;
@@ -112,7 +112,7 @@ fieldset {
 header {
     font-family: 'Birthstone', 'Segoe Script', sans-serif;
     font-size: 65px;
-    font-weight: normal;
+    font-weight: light;
     text-shadow: 2px 2px 5px black;
     color: white;
     text-align: center;
