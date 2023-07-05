@@ -45,9 +45,11 @@ h3 {
     margin: auto;
     padding: 40px 20px 20px 30px;}
 h4 {
+    font-family: Arial, Helvetica, sans-serif;
     color:white;
-    font-size: 28px;
-    font-weight: normal;}
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;}
 input[type=submit], input[type=reset] {
     background-color: #476a7f;
     font-family: Arial, Helvetica, sans-serif;
