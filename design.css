@@ -7,7 +7,7 @@
     padding-top: 100px;}
 .cont2 {
     display: flex;
-    margin-top: 100px;
+    margin-top: 20px;
     height: 100%;}
 #container-sketch {
     display: flex;
@@ -41,7 +41,7 @@ h3 {
     font-size: 34px;
     font-weight: normal;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1200px;;
     margin: auto;
     padding: 40px 20px 20px 30px;}
 h4 {
@@ -50,6 +50,7 @@ h4 {
     font-size: 22px;
     font-weight: normal;
     text-align: center;}
+
 input[type=submit], input[type=reset] {
     background-color: #476a7f;
     font-family: Arial, Helvetica, sans-serif;
@@ -111,13 +112,6 @@ fieldset {
     padding-left: 3%;
     margin-top: 2%;
     margin-bottom: 5%;}
-#sketchbook-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-    margin-top: 125px;}
 #post-text {
     display: flex;
     margin-left: 55px;
@@ -133,7 +127,7 @@ fieldset {
     font-size: 22px;
     font-weight: normal;
     Height: 100%;
-    width: 1200px;
+    width: 850px;
     margin-left: 350px;}
 header {  
     font-family: 'Birthstone', 'Segoe Script', sans-serif;
