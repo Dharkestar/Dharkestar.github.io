@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Birthstone&display=swap');
-
+* {
+    box-sizing: border-box;}
 .wrapper {
     max-width: 1200px;
     margin: 5px auto;}
@@ -20,19 +21,27 @@
     flex-direction: column;
     height: 100%;}
 .about-text {
-    position: relative;
+    float: left;
     font-size: 20px;
     color: black;
     padding: 50px;
     margin: 0 auto;}
+#message {
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+    width: 600px;
+    color: black;
+    font-size: 24px;
+}
 input[type=text] {
+    resize: vertical;
     width: 50%;
     padding: 12px 10px;
     margin: 10px 0;
     border-radius: 5px;}
 h1 {
     margin: auto;
-    font-weight: normal}
+    font-weight: normal;}
 h2 { 
     font-family: 'Birthstone', Arial, Helvetica, sans-serif;
     color: white;
@@ -47,7 +56,7 @@ h3 {
     font-size: 34px;
     font-weight: normal;
     text-align: center;
-    max-width: 1200px;;
+    max-width: 1200px;
     margin: auto;
     padding: 40px 20px 20px 30px;}
 h4 {
@@ -56,68 +65,104 @@ h4 {
     font-size: 22px;
     font-weight: normal;
     text-align: center;}
-
-input[type=submit], input[type=reset] {
-    background-color: #476a7f;
+input#submit { 
+    background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
+    padding: 15px;
     border-radius: 10px;
-    margin: 4px 2px;
+    margin: 5px 10px;
     font-weight: normal;}
-#message {
-    height: 170px;}
-#centered-form {
+input#submit:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: white;
+    box-shadow: 0 0 10px 0 white inset, 0 0 20px 3px white;}
+input#email, input#phone {
+    width: 50%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    border-radius: 5px;}
+input#reset {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    font-weight: normal;}
+input#reset:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: white;
+    box-shadow: 0 0 10px 0 white inset, 0 0 20px 3px white;}
+#contact-form {
     display: flex;
-    justify-content: center;
-    align-items: center;}
+    justify-content: center;}
 fieldset {
-    border: none;
+    box-shadow: 0 0 10px 5px #656161;
     padding: 40px;
     text-shadow: 2px 2px 5px black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: normal;
-    background-image: url(images/mysterious-man.jpg);
+    background: transparent;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
-    max-width: 900px;
+    border-radius: 7px;
+    width: 650px;
     align-content: center;
     color: white;
-    margin-bottom: 0px;
     width: 100%;} 
 .paula {
-    flex: 35%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     padding: 10px;}
-#books-cont {
-    display:grid;
+.books-cont {
+    display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1%;
+    gap: 2rem;
     margin-bottom: 40px;}
-#vector-cont {
+.book {
+    display: grid;
+    gap: 1rem;}
+.vector-cont {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1%;
+    grid-template-rows: repeat(2, 3fr);
+    gap: 1rem;
     margin-bottom: 40px;}
-#illustration-cont {
+.vector {
     display: grid;
-    grid-template-columns: repeat(3, 29%);
-    grid-template-rows: repeat(2, 50%);
-    gap: 5%;
-    margin-bottom: 40px;}
-#illustration-cont-2 {
+    gap: 1rem;}
+.illustration-cont {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    justify-content:space-around;
-    gap:20px;
-    padding-left: 3%;
-    margin-top: 2%;
-    margin-bottom: 5%;}
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin-bottom: 12px;}   
+.illustration {
+    display: grid;
+    gap: 1rem;}
+.illustration-cont-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;}
+.illustration-2 {
+    display: grid;
+    gap: 1rem;}
 #post-text {
     display: flex;
     margin-left: 55px;
@@ -128,18 +173,31 @@ fieldset {
     margin-left: 10px;
     margin-top: 20px;
     padding: 10px;}
-#useful-links {
+table {
+    width: 800px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    margin: auto;
+    font-size: 18px;
     font-weight: normal;
-    Height: 100%;
-    width: 850px;
-    margin-left: 350px;}
+    border: 1px white solid;
+    box-shadow: 0 0 10px 5px #656161;
+    padding: 2rem;
+    column-gap: 10px;}
+td {
+    height: 50px;
+    width: 33%;
+    margin: auto;
+    text-align: center;} 
+th {
+    column-span: all;
+    text-align: center;
+    font-family: 'Birthstone', Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    font-weight: normal;}
 header {  
     font-family: 'Birthstone', 'Segoe Script', sans-serif;
     font-size: 65px;
     font-weight: normal;
-    text-shadow: 2px 2px 5px black;
     color: white;
     text-align: center;
     margin-bottom: 10px;}
@@ -150,8 +208,7 @@ nav {
     border-radius: 5px;}
 a:link {
     color: white;
-    text-decoration: none;
-    font-weight:bold} 
+    text-decoration: none;} 
 a:visited {
     color:#8ca9b9;}    
 body {
@@ -159,8 +216,8 @@ body {
     background-image: url(images/background-image.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
-    font-weight:bold}
+    background-size: cover;
+    color: white;}
 ul {
     list-style-type: none;}
 li {
@@ -174,10 +231,64 @@ p {
     line-height: 1.6;}    
 footer {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 250px;
+    margin-top: 5%;
     color: white;
     text-align: right;
     font-size: 20px;
     font-weight: normal;}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+        body {
+           font-size: 1.75em;}
+        h1 {
+            font-size: 1.5em;}
+        .cont2 {
+            flex-direction: column;}
+        h2{
+            font-size: 70px;}
+        nav {
+            font-size: 1em;}
+        .paula {
+            height: auto;
+            width: 65%;}}
+    
+@media (max-width: 600px) {
+        body {
+            background-image: none;
+            background-color: #0f1025;
+            font-size: 1.25em;}
+        h2 {
+            font-size: 1.5em;}
+        .paula {
+            height: auto;
+            width: 60%;}
+        .cont2 {
+            flex-direction: column;}
+        h1 {
+            font-size: 1.5em;
+            line-height: .8}
+        h2{
+            font-size: 2.75em;}
+        nav {
+            font-size: 1.5em;
+            padding-top: 15px;}
+        .books-cont {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;}
+        .vector-cont {
+            display: flex;
+            flex-wrap: wrap;}
+        .illustration-cont {
+            display:flex;
+            flex-wrap: wrap;}
+        .illustration-cont {
+            display:flex;
+            flex-wrap: wrap;}
+        .illustration-cont-2 {
+            display:flex;
+            flex-wrap: wrap;}
+        }
+        
 
     
